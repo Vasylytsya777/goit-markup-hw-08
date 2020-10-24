@@ -1,0 +1,15 @@
+/*=============   FOOTER   ==============*/
+
+/* footer підвал*/
+.footer {
+  background-color: $main-footer-background-color;
+  /* align-content: center; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}

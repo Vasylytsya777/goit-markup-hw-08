@@ -1,0 +1,56 @@
+/*=============   OUR WORK   ==============*/
+
+/*чим ми займаємось млдуль 3 вебінар 5 34 хвилина*/
+
+/*видалити і переписати, для тега h2 дати інший клас!!!*/
+
+.ourwork {
+  display: flex;
+  padding-bottom: 94px;
+  margin: 0 auto;
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+  }
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    width: 370px;
+
+    /*задаєм правий марджин для фоточок, крім першої (бо перша вже не міє сестринської Item)*/
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    &-label {
+      font-size: 14px;
+      line-height: 1.333;
+      text-align: center;
+      letter-spacing: 0.03em;
+      justify-content: center;
+      text-transform: uppercase;
+      color: $white-color;
+    }
+  }
+}

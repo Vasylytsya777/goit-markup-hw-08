@@ -1,0 +1,172 @@
+.header {
+  background-color: $white-color;
+  margin: 0 auto;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    /* Установит стили нинжней рамки */
+    /*justify-content: space-between;*/
+  }
+
+  /* Лого */
+  &__logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    color: $black-color;
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  &__name {
+    color: $accent-color;
+  }
+}
+/*Контейнер nav*/
+/*Задаємо глобальні параметри для контейнера*/
+
+/* Навігаія сайту */
+/*ставимо вертикальні блоки в горизонт (лінію) і центруємо її*/
+.navigaion {
+  display: flex;
+  align-self: center;
+
+  /* робимо анімацію для списку навігації*/
+  &__list {
+    display: flex;
+    width: 294px;
+    position: relative;
+    overflow: hidden;
+
+    & .navigaion__link-curent {
+      color: $accent-color;
+      position: relative;
+    }
+  }
+  &__link {
+    display: block;
+    color: $black-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+      transform: translateY(4px);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-curent::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+      transform: translateY(-1px);
+    }
+  }
+  &__list &__link:hover::after,
+  &__list &__link:focus::after {
+    transform: translateY(-1px);
+  }
+
+  &__list &__item + &__item {
+    margin-left: 50px;
+  }
+}
+
+/* !!!!!!        Авторизація сайту       !!!!!!!*/
+/*робимо мейл і тел блочним*/
+
+/*задаєм лівий марджин для списку пошти і тел, крім першої (бо перша вже не міє сестринської Item)*/
+
+/*переводим вертикальний список в горизонтальний і позиціонуємо його в лівий край*/
+.authorization {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  text-decoration: none;
+
+  & .authorization__item + .authorization__item {
+    margin-left: 50px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+  }
+  &__item-tel,
+  &__item-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-text-color;
+    text-decoration: none;
+  }
+
+  &__item:hover &__icon {
+    color: $accent-color;
+    fill: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:hover &__item-mail,
+  &__item:hover &__item-tel {
+    color: $accent-color;
+    fill: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item-mail:focus,
+  &__item-tel:focus {
+    color: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item-mail:focus &__icon,
+  &__item-tel:focus &__icon {
+    fill: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    fill: $secondary-text-color;
+  }
+}
