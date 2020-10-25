@@ -14,19 +14,57 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/herobg/herobg.jpg");
+    url("../img/herobg/img-m.jpg");
   background-position: center;
   background-size: cover;
 
+  /*=============    чи це  що нижче потрібно дувлювати???   ==============*/
+      @media screen (min-resolution: 2dpx) {
+    .hero {
+      background-image: url("../../img/herobg/img-m@2x.jpg");
+    }  
+    /*=============   чи це що вище потрібно дувлювати???  ==============*/
+  
   @media screen and (min-width: 1200px) {
     .hero {
       background-image: url("../../img/herobg/img-d.jpg");
     }
+      @media screen (min-resolution: 2dpx) {
+    .hero {
+      background-image: url("../../img/herobg/img-d@2x.jpg");
+    }
   }
+
   @media screen and (min-width: 768px) {
+    .hero {
+      background-image: url("../../img/herobg/img-t.jpg");
+    }
+      @media screen (min-resolution: 2dpx) {
+    .hero {
+      background-image: url("../../img/herobg/img-t@2x.jpg");
+    }
+
   }
+
   @media screen and (min-width: 480px) {
+        .hero {
+      background-image: url("../../img/herobg/img-m.jpg");
+    }
+      @media screen (min-resolution: 2dpx) {
+    .hero {
+      background-image: url("../../img/herobg/img-m@2x.jpg");
+    }
   }
+
+
+
+
+  @media screen (min-resolution: 2dpx) {
+    .hero {
+      background-image: url("../../img/herobg/img-m@2x.jpg");
+    }
+  }
+
 
   &__title {
     margin: 0 auto;
