@@ -19,10 +19,10 @@
   background-size: cover;
 
   /*=============    чи це  що нижче потрібно дувлювати???   ==============*/
-      @media screen (min-resolution: 2dpx) {
-    .hero {
-      background-image: url("../../img/herobg/img-m@2x.jpg");
-    }  
+    //   @media screen (min-resolution: 2dpx) {
+    // .hero {
+    //   background-image: url("../../img/herobg/img-m@2x.jpg");
+    // }  
     /*=============   чи це що вище потрібно дувлювати???  ==============*/
   
   @media screen and (min-width: 1200px) {
@@ -46,25 +46,14 @@
 
   }
 
-  @media screen and (min-width: 480px) {
-        .hero {
-      background-image: url("../../img/herobg/img-m.jpg");
-    }
-      @media screen (min-resolution: 2dpx) {
+ @media screen (min-resolution: 2dpx) {
     .hero {
       background-image: url("../../img/herobg/img-m@2x.jpg");
     }
   }
 
 
-
-
-  @media screen (min-resolution: 2dpx) {
-    .hero {
-      background-image: url("../../img/herobg/img-m@2x.jpg");
-    }
-  }
-
+  
 
   &__title {
     margin: 0 auto;
