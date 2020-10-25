@@ -4,9 +4,11 @@
 
 .hero {
   width: 100%;
+  outline: 1px solid red;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #c4c4c4;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.5),
       rgba(47, 48, 58, 0.5)

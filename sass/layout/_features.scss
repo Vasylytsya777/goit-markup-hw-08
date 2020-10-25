@@ -3,11 +3,11 @@
 /*переводим вертикальний список в горизонтальний */
 
 .features {
+  outline: 1px solid red;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 450px;
   background-color: $white-color;
-  margin: 0 auto;
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 738px;
   }
@@ -16,6 +16,8 @@
   }
   &__list {
     width: 450px;
+    margin: 0 15px;
+
     @media screen and (min-width: 480px) and (max-width: 1199px) {
       display: flex;
     }
@@ -24,6 +26,7 @@
     }
 
     & &-item {
+      width: 450px;
       width: calc((100% - 90px) / 4);
     }
     /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
@@ -32,7 +35,6 @@
     }
 
     &-item::before {
-      display: block;
       content: "";
       height: 120px;
       background: #f5f4fa;
