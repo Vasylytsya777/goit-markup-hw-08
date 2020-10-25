@@ -19,116 +19,117 @@
   background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-  screen and (min-resolution: 192dpi) and (min-width: 480px),
-  screen and (min-resolution: 2dppx) and (min-width: 480px)
-   {
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
     .hero {
       background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../img/herobg/img-m@2x.jpg");
-  }
-  
-  
-@media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
-  screen and (min-resolution: 96dpi) and (min-width: 768px),
-  screen and (min-resolution: 1dppx) and (min-width: 768px) 
-  {
-   .hero {background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../img/herobg/img-t.jpg");
-  }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px)
-   {
-   .hero {background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../img/herobg/img-t@2x.jpg");
-  }
-}
-}
-
-
-@media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px),
-  screen and (min-resolution: 96dpi) and (min-width: 1200px),
-  screen and (min-resolution: 1dppx) and (min-width: 1200px) 
-  {
-   .hero {background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../img/herobg/img-d.jpg");
-    }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) 
-  {
-   .hero {background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../img/herobg/img-d@2x.jpg");
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../img/herobg/img-m@2x.jpg");
     }
   }
-  }
 
-  &__title {
-    margin: 0 auto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-color;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    max-width: 700px;
-  }
-  /*=============  секція  BUTTON   ==============*/
+  @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
+    screen and (min-resolution: 96dpi) and (min-width: 768px),
+    screen and (min-resolution: 1dppx) and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../img/herobg/img-t.jpg");
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../../img/herobg/img-t@2x.jpg");
+      }
+    }
 
-  &__button {
-    /* font-family: inherit; */
-    display: inline-block;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
-    text-align: center;
-    text-decoration: none;
-    color: $white-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px),
+      screen and (min-resolution: 96dpi) and (min-width: 1200px),
+      screen and (min-resolution: 1dppx) and (min-width: 1200px) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url("../../img/herobg/img-d.jpg");
+      }
+      @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px),
+        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .hero {
+          background-image: linear-gradient(
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url("../../img/herobg/img-d@2x.jpg");
+        }
+      }
+    }
 
-    &:hover {
-      cursor: pointer;
-      background-color: #ffffff;
-      color: $accent-color;
+    &__title {
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.364;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $white-color;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+    /*=============  секція  BUTTON   ==============*/
+
+    &__button {
+      /* font-family: inherit; */
+      display: inline-block;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 32px;
+      min-width: 200px;
+      text-align: center;
+      text-decoration: none;
+      color: $white-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      background-color: $accent-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        color: $accent-color;
+      }
     }
   }
 }
 
-.contact-form-btn{
+.contact-form-btn {
+  /* font-family: inherit; */
   display: block;
   justify-content: center;
+
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
   text-decoration: none;
+
   margin-bottom: 40px;
   margin: 0 auto;
   color: $white-color;
