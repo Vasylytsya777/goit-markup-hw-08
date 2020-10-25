@@ -253,7 +253,7 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../img/herobg/img-m.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-m.jpg");
   background-size: cover;
   background-position: center;
   /*=============  секція  BUTTON   ==============*/
@@ -261,13 +261,13 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/herobg/img-m@2x.jpg");
+    background-image: url("/img/herobg/img-m@2x.jpg");
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../../img/herobg/img-t.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-t.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -275,7 +275,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/herobg/img-t@2x.jpg");
+    background-image: url("/img/herobg/img-t@2x.jpg");
   }
 }
 
@@ -285,7 +285,7 @@ img {
     padding-bottom: 200px;
   }
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../../img/herobg/img-d.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-d.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -293,7 +293,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/herobg/img-d@2x.jpg");
+    background-image: url("/img/herobg/img-d@2x.jpg");
   }
 }
 
@@ -386,15 +386,40 @@ img {
 /*=============   FEATURES   ==============*/
 /*переводим вертикальний список в горизонтальний */
 .features {
-  padding-top: 94px;
-  padding-bottom: 79px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 450px;
   background-color: #ffffff;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .features {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    width: 1170px;
+  }
+}
+
 .features__list {
-  display: flex;
+  width: 450px;
   /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .features__list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+  }
 }
 
 .features__list .features__list-item {
