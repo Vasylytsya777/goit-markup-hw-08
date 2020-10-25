@@ -18,42 +18,65 @@
   background-position: center;
   background-size: cover;
 
-  /*=============    чи це  що нижче потрібно дувлювати???   ==============*/
-    //   @media screen (min-resolution: 2dpx) {
-    // .hero {
-    //   background-image: url("../../img/herobg/img-m@2x.jpg");
-    // }  
-    /*=============   чи це що вище потрібно дувлювати???  ==============*/
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  screen and (min-resolution: 192dpi) and (min-width: 480px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px)
+   {
+    .hero {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/herobg/img-m@2x.jpg");
+  }
   
-  @media screen and (min-width: 1200px) {
-    .hero {
-      background-image: url("../../img/herobg/img-d.jpg");
-    }
-      @media screen (min-resolution: 2dpx) {
-    .hero {
-      background-image: url("../../img/herobg/img-d@2x.jpg");
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .hero {
-      background-image: url("../../img/herobg/img-t.jpg");
-    }
-      @media screen (min-resolution: 2dpx) {
-    .hero {
-      background-image: url("../../img/herobg/img-t@2x.jpg");
-    }
-
-  }
-
- @media screen (min-resolution: 2dpx) {
-    .hero {
-      background-image: url("../../img/herobg/img-m@2x.jpg");
-    }
-  }
-
-
   
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
+  screen and (min-resolution: 96dpi) and (min-width: 768px),
+  screen and (min-resolution: 1dppx) and (min-width: 768px) 
+  {
+   .hero {background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../img/herobg/img-t.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px)
+   {
+   .hero {background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../img/herobg/img-t@2x.jpg");
+  }
+}
+}
+
+
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px),
+  screen and (min-resolution: 96dpi) and (min-width: 1200px),
+  screen and (min-resolution: 1dppx) and (min-width: 1200px) 
+  {
+   .hero {background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../img/herobg/img-d.jpg");
+    }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) 
+  {
+   .hero {background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../img/herobg/img-d@2x.jpg");
+    }
+  }
+
 
   &__title {
     margin: 0 auto;
@@ -98,17 +121,14 @@
 }
 
 .contact-form-btn {
-  /* font-family: inherit; */
   display: block;
   justify-content: center;
-
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
   text-decoration: none;
-
   margin-bottom: 40px;
   margin: 0 auto;
   color: $white-color;
