@@ -3,92 +3,96 @@
 /*Секція герой */
 
 .hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $main-footer-background-color;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #c4c4c4;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
     ),
     url("../img/herobg/img-m.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-    screen and (min-resolution: 192dpi) and (min-width: 480px),
-    screen and (min-resolution: 2dppx) and (min-width: 480px) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../img/herobg/img-m@2x.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url("../img/herobg/img-m@2x.jpg");
     }
   }
 
-  @media screen and (min-device-pixel-ratio: 1) and (min-width: 768px),
-    screen and (min-resolution: 96dpi) and (min-width: 768px),
-    screen and (min-resolution: 1dppx) and (min-width: 768px) {
-    .hero {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    & {
       background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
+          rgba(47, 48, 58, 0.5),
+          rgba(47, 48, 58, 0.5)
         ),
         url("../../img/herobg/img-t.jpg");
-    }
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-      screen and (min-resolution: 192dpi) and (min-width: 768px),
-      screen and (min-resolution: 2dppx) and (min-width: 768px) {
-      .hero {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url("../../img/herobg/img-t@2x.jpg");
-      }
-    }
 
-    @media screen and (min-device-pixel-ratio: 1) and (min-width: 1200px),
-      screen and (min-resolution: 96dpi) and (min-width: 1200px),
-      screen and (min-resolution: 1dppx) and (min-width: 1200px) {
-      .hero {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url("../../img/herobg/img-d.jpg");
-      }
-      @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-        screen and (min-resolution: 192dpi) and (min-width: 1200px),
-        screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-        .hero {
-          background-image: linear-gradient(
-              rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)
-            ),
-            url("../../img/herobg/img-d@2x.jpg");
-        }
-      }
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url("../../img/herobg/img-t@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    & {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.5),
+          rgba(47, 48, 58, 0.5)
+        ),
+        url("../../img/herobg/img-d.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url("../../img/herobg/img-d@2x.jpg");
+    }
+  }
+
+  &__content {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 696px;
     }
   }
 
   &__title {
-    margin: 0 auto;
+    @media screen and (max-width: 1199px) {
+      font-size: 26px;
+      line-height: 1.61;
+    }
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
     margin-top: 0px;
     margin-bottom: 30px;
-    max-width: 700px;
   }
   /*=============  секція  BUTTON   ==============*/
 
@@ -122,14 +126,12 @@
   /* font-family: inherit; */
   display: block;
   justify-content: center;
-
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
   text-decoration: none;
-
   margin-bottom: 40px;
   margin: 0 auto;
   color: $white-color;
