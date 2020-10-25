@@ -3,46 +3,48 @@
 /*переводим вертикальний список в горизонтальний */
 
 .features {
-  outline: 1px solid red;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 450px;
   background-color: $white-color;
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 738px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1170px;
-  }
-  &__list {
-    width: 450px;
-    margin: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
 
+  &__list {
+    display: inline-block;
+    outline: 1px solid red;
     @media screen and (min-width: 480px) and (max-width: 1199px) {
       display: flex;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
     }
+  }
+  & &-item {
+    outline: 1px solid red;
+    width: 120px;
 
-    & &-item {
-      width: 450px;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      outline: 1px solid red;
       width: calc((100% - 90px) / 4);
     }
-    /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
-    & &-item + &-item {
-      margin-left: 30px;
-    }
+  }
+  /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
+  & &-item + &-item {
+    margin-left: 30px;
+  }
 
-    &-item::before {
-      content: "";
-      height: 120px;
-      background: #f5f4fa;
-      border-radius: 4px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__title {
@@ -68,21 +70,21 @@
 }
 
 .item-antenna::before {
-  background-image: url(../img/features/antenna.svg);
+  background-image: url(/img/features/antenna.svg);
   background-size: 70px;
 }
 
 .item-clock::before {
-  background-image: url(../img/features/clock.svg);
+  background-image: url(/img/features/clock.svg);
   background-size: 70px;
 }
 
 .item-diagram::before {
-  background-image: url(../img/features/diagram.svg);
+  background-image: url(/img/features/diagram.svg);
   background-size: 70px;
 }
 
 .item-astronaut::before {
-  background-image: url(../img/features/astronaut.svg);
+  background-image: url(/img/features/astronaut.svg);
   background-size: 70px;
 }

@@ -78,6 +78,7 @@ img {
   background-color: #ffffff;
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
+  outline: 1px solid red;
   /* Лого */
 }
 
@@ -250,9 +251,7 @@ img {
 /*Секція герой */
 .hero {
   width: 100%;
-  outline: 1px solid red;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 60px 118px;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-m.jpg");
   background-size: cover;
@@ -387,31 +386,19 @@ img {
 /*=============   FEATURES   ==============*/
 /*переводим вертикальний список в горизонтальний */
 .features {
-  outline: 1px solid red;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 450px;
   background-color: #ffffff;
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .features {
-    width: 738px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features {
-    width: 1170px;
-  }
-}
-
-.features__list {
-  width: 450px;
-  margin: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
   /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
 }
 
+.features__list {
+  display: inline-block;
+  outline: 1px solid red;
+}
+
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .features__list {
     display: flex;
@@ -424,16 +411,24 @@ img {
   }
 }
 
-.features__list .features__list-item {
-  width: 450px;
-  width: calc((100% - 90px) / 4);
+.features .features-item {
+  outline: 1px solid red;
+  width: 120px;
 }
 
-.features__list .features__list-item + .features__list-item {
+@media screen and (min-width: 1200px) {
+  .features .features-item {
+    outline: 1px solid red;
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.features .features-item + .features-item {
   margin-left: 30px;
 }
 
-.features__list-item::before {
+.features-item::before {
+  display: block;
   content: "";
   height: 120px;
   background: #f5f4fa;
@@ -465,22 +460,22 @@ img {
 }
 
 .item-antenna::before {
-  background-image: url(../img/features/antenna.svg);
+  background-image: url(/img/features/antenna.svg);
   background-size: 70px;
 }
 
 .item-clock::before {
-  background-image: url(../img/features/clock.svg);
+  background-image: url(/img/features/clock.svg);
   background-size: 70px;
 }
 
 .item-diagram::before {
-  background-image: url(../img/features/diagram.svg);
+  background-image: url(/img/features/diagram.svg);
   background-size: 70px;
 }
 
 .item-astronaut::before {
-  background-image: url(../img/features/astronaut.svg);
+  background-image: url(/img/features/astronaut.svg);
   background-size: 70px;
 }
 
