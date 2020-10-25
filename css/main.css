@@ -386,22 +386,29 @@ img {
 /*=============   FEATURES   ==============*/
 /*переводим вертикальний список в горизонтальний */
 .features {
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #ffffff;
   margin: 0 auto;
   outline: 1px solid red;
-  /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .features {
+    width: 738px;
+  }
 }
 
 .features__list {
-  display: inline-block;
   outline: 1px solid red;
+  /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .features__list {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -411,20 +418,35 @@ img {
   }
 }
 
-.features .features-item {
+.features__list .features__list-item + .features__list-item {
+  margin-top: 30px;
+}
+
+.features-item {
   outline: 1px solid red;
-  width: 120px;
 }
 
 @media screen and (min-width: 1200px) {
-  .features .features-item {
+  .features-item {
     outline: 1px solid red;
     width: calc((100% - 90px) / 4);
   }
 }
 
-.features .features-item + .features-item {
-  margin-left: 30px;
+.features__svg {
+  margin: 0 auto;
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  padding: 25px 190px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .features__svg {
+    width: 354px;
+    height: 120px;
+    padding: 25px 142px;
+  }
 }
 
 .features-item::before {
@@ -439,6 +461,7 @@ img {
 }
 
 .features__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -455,37 +478,28 @@ img {
   line-height: 2;
   color: #757575;
   letter-spacing: 0.03em;
-  padding: 0px;
-  margin: 0px;
-}
-
-.item-antenna::before {
-  background-image: url(/img/features/antenna.svg);
-  background-size: 70px;
-}
-
-.item-clock::before {
-  background-image: url(/img/features/clock.svg);
-  background-size: 70px;
-}
-
-.item-diagram::before {
-  background-image: url(/img/features/diagram.svg);
-  background-size: 70px;
-}
-
-.item-astronaut::before {
-  background-image: url(/img/features/astronaut.svg);
-  background-size: 70px;
+  height: 50px;
 }
 
 /*=============   OUR WORK   ==============*/
 /*чим ми займаємось млдуль 3 вебінар 5 34 хвилина*/
 /*видалити і переписати, для тега h2 дати інший клас!!!*/
 .ourwork {
-  display: flex;
-  padding-bottom: 94px;
-  margin: 0 auto;
+  display: none;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .ourwork {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ourwork {
+    display: flex;
+    padding-bottom: 94px;
+    margin: 0 auto;
+  }
 }
 
 .ourwork__title {
