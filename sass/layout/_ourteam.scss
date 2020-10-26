@@ -1,102 +1,176 @@
-/*=============   OUR TEAM   ==============*/
-/* наша команда*/
 .ourteam {
-  background-color: $background-grey-color;
-  margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
-    display: flex;
-
-    /*задаєм правий марджин для картинок, крім першої (бо перша вже не міє сестринської Item)*/
-    & .ourteam__item {
-      width: calc((100% - 3 * 30px) / 3);
-      margin-right: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
-  &__item {
-    width: 270px;
-    background-color: $white-color;
+
+  &__list-foto {
+    text-align: center;
+    padding-bottom: 24px;
+    background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
+
+    &:not(:last-child) {
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      @media screen and (min-width: 768px) {
+        margin-right: 30px;
+      }
+    }
+
+    &:nth-last-child(-n + 2) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 0;
+      }
+    }
   }
 
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    color: $main-text-color;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-  }
-
-  &__image {
-    margin-bottom: 30px;
+  &__list-image {
+    max-width: 100%;
+    height: auto;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
   }
 
   &__subject {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.188;
-    color: $main-text-color;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-    text-align: center;
+    line-height: 1.18;
   }
 
   &__heading {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.188;
-    color: $secondary-text-color;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-    text-align: center;
     margin-bottom: 16px;
-  }
-
-  &__social-list {
-    display: flex;
-    width: 206px;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: center;
-  }
-
-  &__social-item:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  &__social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: $white-color;
-    border-radius: 50%;
-
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &:hover .ourteam__social-svg,
-    &:focus .ourteam__social-svg {
-      fill: $white-color;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-
-  &__social-svg {
-    width: 20px;
-    height: 20px;
-    fill: #afb1b8;
+    font-size: 16px;
+    line-height: 1.18;
   }
 }
+// /*=============   OUR TEAM   ==============*/
+// /* наша команда*/
+// .ourteam {
+//   background-color: $background-grey-color;
+//   margin: 0 auto;
+//   padding-bottom: 94px;
+//   padding-top: 94px;
+
+//   &__list {
+//     display: flex;
+
+//     /*задаєм правий марджин для картинок, крім першої (бо перша вже не міє сестринської Item)*/
+//     & .ourteam__item {
+//       width: calc((100% - 3 * 30px) / 3);
+//       margin-right: 30px;
+//     }
+//   }
+//   &__item {
+//     width: 270px;
+//     background-color: $white-color;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     padding-bottom: 30px;
+//   }
+
+//   &__title {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.167;
+//     text-align: center;
+//     color: $main-text-color;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 50px;
+//   }
+
+//   &__image {
+//     margin-bottom: 30px;
+//   }
+
+//   &__subject {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.188;
+//     color: $main-text-color;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+//     text-align: center;
+//   }
+
+//   &__heading {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.188;
+//     color: $secondary-text-color;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 30px;
+//     text-align: center;
+//     margin-bottom: 16px;
+//   }
+
+//   &__social-list {
+//     display: flex;
+//     width: 206px;
+//     margin: 0 auto;
+
+//     display: flex;
+//     justify-content: center;
+//   }
+
+//   &__social-item:not(:last-child) {
+//     margin-right: 10px;
+//   }
+
+//   &__social-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     background-color: $white-color;
+//     border-radius: 50%;
+
+//     &:hover,
+//     &:focus {
+//       background-color: $accent-color;
+//       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     &:hover .ourteam__social-svg,
+//     &:focus .ourteam__social-svg {
+//       fill: $white-color;
+//       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//   }
+
+//   &__social-svg {
+//     width: 20px;
+//     height: 20px;
+//     fill: #afb1b8;
+//   }
+// }
