@@ -1,20 +1,10 @@
 @charset "UTF-8";
-.ourteam__list, .ourteam__social-list {
-  list-style: none;
-}
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  max-width: 0;
 }
 
 .list {
@@ -58,59 +48,17 @@ img {
   pointer-events: none;
 }
 
-.contact-form-btn {
-  /* font-family: inherit; */
-  display: block;
-  justify-content: center;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 40px;
-  margin: 0 auto;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .container {
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+  margin: 0 auto;
 }
 
 .header {
   background-color: #ffffff;
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
-  outline: 1px solid red;
   /* Лого */
 }
 
@@ -282,84 +230,32 @@ img {
 /*=============   HERO   ==============*/
 /*Секція герой */
 .hero {
-  width: 100%;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  margin: 0 auto;
-  background-color: #c4c4c4;
-  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/herobg/herobg.jpg");
   background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-m.jpg");
+  background-size: cover;
   /*=============  секція  BUTTON   ==============*/
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-m@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-t.jpg");
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("/img/herobg/img-t@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    height: 600px;
-  }
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-d.jpg");
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("/img/herobg/img-d@2x.jpg");
-  }
-}
-
-.hero__container {
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 1px solid navy; */
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    width: 1200px;
-    max-width: 696px;
-  }
-}
-
 .hero__title {
-  max-width: 360px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 auto 30px auto;
-}
-
-@media screen and (mіn-width: 1200px) {
-  .hero__title {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
-  }
+  margin-top: 0px;
+  margin-bottom: 30px;
+  max-width: 700px;
 }
 
 .hero__button {
@@ -387,116 +283,121 @@ img {
   color: #2196f3;
 }
 
+.contact-form-btn {
+  /* font-family: inherit; */
+  display: block;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Секція особливості*/
 /*=============   FEATURES   ==============*/
 /*переводим вертикальний список в горизонтальний */
 .features {
-  padding: 60px 0;
+  padding-top: 94px;
+  padding-bottom: 79px;
+  background-color: #ffffff;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 1200px) {
-  .features {
-    padding: 94px 0;
-  }
+.features__list {
+  display: flex;
+  /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
 }
 
-@media screen and (min-width: 768px) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.features__list .features__list-item {
+  width: calc((100% - 90px) / 4);
 }
 
-.features__item {
-  width: 100%;
+.features__list .features__list-item + .features__list-item {
+  margin-left: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features__item {
-    width: calc((100% - 1 * 30px) / 2);
-  }
-  .features__item:not(:nth-child(even)) {
-    margin-right: 30px;
-  }
-  .features__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__item {
-    width: calc((100% - 3 * 30px) / 4);
-  }
-  .features__item:not(:last-child) {
-    margin-right: 30px;
-  }
+.features__list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features__title {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .features__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: #212121;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .features__text {
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 2;
+  color: #757575;
+  letter-spacing: 0.03em;
+  padding: 0px;
+  margin: 0px;
 }
 
-.svg-container {
-  display: flex;
-  height: 120px;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
+.item-antenna::before {
+  background-image: url(../img/features/antenna.svg);
+  background-size: 70px;
+}
+
+.item-clock::before {
+  background-image: url(../img/features/clock.svg);
+  background-size: 70px;
+}
+
+.item-diagram::before {
+  background-image: url(../img/features/diagram.svg);
+  background-size: 70px;
+}
+
+.item-astronaut::before {
+  background-image: url(../img/features/astronaut.svg);
+  background-size: 70px;
 }
 
 /*=============   OUR WORK   ==============*/
 /*чим ми займаємось млдуль 3 вебінар 5 34 хвилина*/
 /*видалити і переписати, для тега h2 дати інший клас!!!*/
 .ourwork {
-  padding: 60px 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .ourwork {
-    padding: 94px 0;
-  }
+  display: flex;
+  padding-bottom: 94px;
+  margin: 0 auto;
 }
 
 .ourwork__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
   text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .ourwork__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
 }
 
 .ourwork__list {
@@ -504,36 +405,33 @@ img {
 }
 
 .ourwork__item {
-  width: calc((100% - 60px) / 3);
   position: relative;
+  display: block;
+  width: 370px;
+  /*задаєм правий марджин для фоточок, крім першої (бо перша вже не міє сестринської Item)*/
 }
 
 .ourwork__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.ourwork__picture {
-  display: block;
-}
-
 .ourwork__overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  width: 100%;
   bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
 }
 
 .ourwork__overlay-label {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.333;
   text-align: center;
   letter-spacing: 0.03em;
+  justify-content: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -541,112 +439,74 @@ img {
 /*=============   OUR TEAM   ==============*/
 /* наша команда*/
 .ourteam {
-  padding: 60px 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .ourteam {
-    padding: 94px 0;
-  }
+  background-color: #f5f4fa;
+  margin: 0 auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .ourteam__list {
+  display: flex;
   /*задаєм правий марджин для картинок, крім першої (бо перша вже не міє сестринської Item)*/
 }
 
-@media screen and (min-width: 768px) {
-  .ourteam__list {
-    display: flex;
-    display: wrap;
-  }
+.ourteam__list .ourteam__item {
+  width: calc((100% - 3 * 30px) / 3);
+  margin-right: 30px;
 }
 
 .ourteam__item {
-  padding-bottom: 24px;
-  width: 100%;
+  width: 270px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .ourteam__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .ourteam__item {
-    width: calc((100% - 1 * 30px) / 2);
-  }
-  .ourteam__item:not(:nth-child(even)) {
-    margin-right: 30px;
-  }
-  .ourteam__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .ourteam__item {
-    width: calc((100% - 3 * 30px) / 4);
-    padding-bottom: 30px;
-  }
-  .ourteam__item:not(:last-child) {
-    margin-right: 30px;
-  }
+.ourteam__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: #212121;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .ourteam__image {
   margin-bottom: 30px;
 }
 
-.ourteam__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .ourteam__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
-}
-
 .ourteam__subject {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.188;
+  color: #212121;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .ourteam__heading {
-  margin-top: 0;
-  margin-bottom: 16px;
-  color: #757575;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.188;
+  color: #757575;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .ourteam__social-list {
   display: flex;
+  width: 206px;
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
 }
 
-.ourteam_social-item {
-  color: #afb1b8;
-}
-
-.ourteam_social-item:not(:last-child) {
+.ourteam__social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -654,10 +514,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 44px;
   width: 44px;
+  height: 44px;
+  background-color: #ffffff;
   border-radius: 50%;
-  color: #afb1b8;
 }
 
 .ourteam__social-link:hover, .ourteam__social-link:focus {
@@ -674,21 +534,18 @@ img {
 .ourteam__social-svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: #afb1b8;
 }
 
 /*=============   regular-clients   ==============*/
 .clients {
-  padding: 60px 0;
+  margin: 0 auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  /* !!!  вище треба прописати мінусовий -15 margin  !!!*/
   /* .regular-clients-flex.list {
   display: flex;
 } */
-}
-
-@media screen and (min-width: 1200px) {
-  .clients {
-    padding: 94px 0;
-  }
 }
 
 .clients__title {
@@ -950,6 +807,46 @@ img {
   margin-left: 10px;
 }
 
+/*=====================    Портфоліо    =====================*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  /*задаєм правий марджин для кнопок, крім першої (бо перша вже не міє сестринської Item)*/
+}
+
+.filter-btn .filter-btn__item + .filter-btn__item {
+  margin-left: 8px;
+}
+
+.button-menu {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #212121;
+  border: none;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.button-menu:hover, .button-menu:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop {
   position: fixed;
   top: 0px;
@@ -1139,5 +1036,102 @@ img {
 .close-modal svg {
   width: 18px;
   height: 18px;
+}
+
+/*=====================    Портфоліо    =====================*/
+/*  калькулятор  */
+/*.team-item{
+  width: calc((100% - 2 * 30px)/ 3);
+*/
+/* секція робіт з картинками*/
+.projects {
+  /* ======================= HOVER FOR IMAGE ====================*/
+  /* ======================= HOVER FOR IMAGE ====================*/
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*забираємо правий марджин в кожного третього елемента*/
+  /*забираємо нижній марджин в останніх трьох елементів*/
+}
+
+.projects__container .projects__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.projects__container .projects__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projects__item {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects__item:hover, .projects__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects__content {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.projects__content-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+  margin: 0px 24px 0px;
+}
+
+.projects__content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+  letter-spacing: 0.03em;
+  margin: 0px 24px 0px;
+}
+
+.projects__item-block {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.projects__item-block:hover .projects__block {
+  transform: translatey(0);
+}
+
+.projects-link:hover .projects__block,
+.projects-link:focus .projects__block {
+  transform: translateY(0%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects__block {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
 }
 /*# sourceMappingURL=main.css.map */

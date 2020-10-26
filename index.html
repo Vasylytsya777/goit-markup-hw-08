@@ -29,7 +29,7 @@
           <li class="navigaion__item">
             <a href="./portfolio.html" aria-label="Портфолио" class="navigaion__link">Портфолио</a>
           </li >
-          <li class="navigaion__item"><a href="" aria-label="Контакти" class="navigaion__link">Контакты</a></li>
+          <li class="navigaion__item"><a href="" aria-label="Контакти" class="navigaion__link">Контакти</a></li>
         </ul>
       </nav>
      
@@ -61,67 +61,43 @@
      
      
       <section class="hero">
-        <div class="hero-container">
             <h1 class="hero__title">
           Эффективные решения
           для вашего бизнеса
         </h1>
         <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-        </div>    
+
         </section>
 
 
-
       <!-- секція  features -->
-          
+     
+     
       <section class="features">
         <div class="container"> 
-          <ul class="features__list">
-          <li class="features__item">
-              <div class="svg-container">
-                <svg class="svg-container__icon" width="70px" height="70px">
-                <use href="./img/svg/sprite.svg#icon-antenna"></use>
-                </svg>
-            </div>
+          <ul class="features__list list">
+          <li class="features__list-item item item-antenna">
             <h2 class="features__title">Внимание к деталям</h2>
             <p class="features__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="features__item">
-        <div class="svg-container">
-          <svg class="svg-container__icon" width="70px" height="70px">
-                <use href="./img/svg/sprite.svg#icon-clock"></use>
-              </svg>
-            
-            </div>
+          <li class="features__list-item item item-clock">
             <h2 class="features__title">Пунктуальность</h2>
             <p class="features__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-           <li class="features__item">
-                    <div class="svg-container">
-                      <svg class="svg-container__icon" width="70px" height="70px">
-                <use href="./img/svg/sprite.svg#icon-diagram"></use>
-              </svg>
-            
-            </div>
+           <li class="features__list-item item  item-diagram">
             <h2 class="features__title">Планирование</h2>
             <p class="features__text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="features__item">
-              <div class="svg-container">
-                <svg class="svg-container__icon" width="70px" height="70px">
-                <use href="./img/svg/sprite.svg#icon-astronaut"></use>
-              </svg>
-            
-            </div>
+          <li class="features__list-item item  item-astronaut">
             <h2 class="features__title">Современные технологии</h2>
             <p class="features__text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -143,38 +119,29 @@
         <h2 class="ourwork__title">Чем мы занимаемся</h2>
       <ul class="ourwork__list list">
         <li class="ourwork__item">
-          <a href="" class="ourwork__link">
-<picture>
-  <source srcset="./img/ourwork/img-d.jpg 1x, ./img/ourwork/img-d@2x.jpg 2x" media="(min-width: 1200px)" />
-    <img class=" ourwork__picture" src="./img/ourwork/img-d.jpg" alt="What are we doing" />
-</picture>
-          </a>
+
+   <img src="./img/ourwork/box_img.jpg"
+              alt="What are we doing"
+              width="370" height="294"/>
+
+
+              
           <div class="ourwork__overlay">
           <p class="ourwork__overlay-label">Мобильные приложения</p>
          </div> 
-        
           </li>
         <li class="ourwork__item">
-          <a href="" class="ourwork__link">
-            <picture>
-              <source srcset="./img/ourwork/img-d-1.jpg 1x, ./img/ourwork/img-d-1@2x.jpg 2x" media="(min-width: 1200px)" />
-              <img class=" ourwork__picture" src="./img/ourwork/img-d-1.jpg" alt="What are we doing"/>
-            </picture>
-          </a>
-
+          <img src="./img/ourwork/box_img(1).jpg"
+              alt="What are we doing 1"
+              width="370" height="294"/>
            <div class="ourwork__overlay">
           <p class="ourwork__overlay-label">Десктопные приложения</p>
          </div> 
       </li>
         <li class="ourwork__item">
-
-                <a href="" class="ourwork__link">
-                  <picture>
-                    <source srcset="./img/ourwork/img-d-2.jpg 1x, ./img/ourwork/img-d-2@2x.jpg 2x" media="(min-width: 1200px)" />
-                    <img class=" ourwork__picture" src="./img/ourwork/img-d-2.jpg" alt="What are we doing"/>
-                  </picture>
-                </a>
-
+          <img src="./img/ourwork/box_img(2).jpg"
+              alt="What are we doing 2"
+              width="370" height="294"/>
 <div class="ourwork__overlay">
   <p class="ourwork__overlay-label">Дизайнерские решения</p>
 </div>
@@ -182,9 +149,6 @@
       </ul>
     </div>
       </section>
-
-
-
 
 
       <!-- секція Our team    доробити розкладку !!!! -->
@@ -195,26 +159,11 @@
           <h2 class="ourteam__title">Наша команда</h2>
         <ul class="ourteam__list list">
           <li class="ourteam__item">
-
-<picture> 
-  <source srcset="./img/team/img-d.jpg 1x, ./img/team/img-d@2x.jpg 2x" media="(min-width: 1200px)">
-
-  <source srcset="./img/team/img-t.jpg 1x, ./img/team/img-t@2x.jpg 2x" media="(min-width: 768px)">
-
-  <source srcset="./img/team/img-m.jpg 1x, ./img/team/img-m@2x.jpg 2x" media="(min-width: 320px)">
-
-  <img class="ourteam__image" src="./img/team/img-m.jpg " alt="Игорь Демьяненко" />
-</picture>
-
-
+            <img class="ourteam__image" src="./img/team/id.jpg" alt="Игорь Демьяненко" width="270" height="260" />
             <h3 class="ourteam__subject">Игорь Демьяненко</h3>
             <p class="ourteam__heading">Product Designer</p>
-
-
              <ul class="ourteam__social-list list">
-
               <li class="ourteam__social-item">
-                
                 <a href="" class="ourteam__social-link">
                 <svg class="ourteam__social-svg">
                   <use href="./img/svg/sprite.svg#instagram"></use>
@@ -246,20 +195,7 @@
         
           </li>
           <li class="ourteam__item">
-
-
-<picture>
-  <source srcset="./img/team/img-d-1.jpg 1x, ./img/team/img-d-1@2x.jpg 2x" media="(min-width: 1200px)">
-
-  <source srcset="./img/team/img-t-1.jpg 1x, ./img/team/img-t-1@2x.jpg 2x" media="(min-width: 768px)">
-
-  <source srcset="./img/team/img-m-1.jpg 1x, ./img/team/img-m-1@2x.jpg 2x" media="(min-width: 320px)">
-
-  <img class="ourteam__image" src="./img/team/img-m-1.jpg " alt="Ольга Репина" />
-</picture>
-
-
-
+            <img class="ourteam__image" src="./img/team/or.jpg" alt="Ольга Репина" width="270" height="260" />
             <h3 class="ourteam__subject">Ольга Репина</h3>
             <p class="ourteam__heading">Frontend Developerr</p>
     <ul class="ourteam__social-list list">
@@ -295,23 +231,11 @@
    
           </li>
           <li class="ourteam__item">
-          
-          <picture>
-            <source srcset="./img/team/img-d-2.jpg 1x, ./img/team/img-d-2@2x.jpg 2x" media="(min-width: 1200px)">
-          
-            <source srcset="./img/team/img-t-2.jpg 1x, ./img/team/img-t-2@2x.jpg 2x" media="(min-width: 768px)">
-          
-            <source srcset="./img/team/img-m-2.jpg 1x, ./img/team/img-m-2@2x.jpg 2x" media="(min-width: 320px)">
-          
-            <img class="ourteam__image" src="./img/team/img-m-2.jpg " alt="Николай Тарасов" />
-          </picture>
-
+            <img class="ourteam__image" src="./img/team/nt.jpg" alt="Николай Тарасов" width="270" height="260" />
             <h3 class="ourteam__subject">Николай Тарасов</h3>
-
             <p class="ourteam__heading">Marketing</p>
  <ul class="ourteam__social-list list">
               <li class="ourteam__social-item">
-
                 <a href="" class="ourteam__social-link">
                 <svg class="ourteam__social-svg">
                   <use href="./img/svg/sprite.svg#instagram"></use>
@@ -343,17 +267,7 @@
 
           </li>
           <li class="ourteam__item">
-
-<picture>
-  <source srcset="./img/team/img-d-3.jpg 1x, ./img/team/img-d-3@2x.jpg 2x" media="(min-width: 1200px)">
-
-  <source srcset="./img/team/img-t-3.jpg 1x, ./img/team/img-t-3@2x.jpg 2x" media="(min-width: 768px)">
-
-  <source srcset="./img/team/img-m-3.jpg 1x, ./img/team/img-m-3@2x.jpg 2x" media="(min-width: 320px)">
-
-  <img class="ourteam__image" src="./img/team/img-m-3.jpg " alt="Николай Тарасов" />
-</picture>
-
+            <img class="ourteam__image" src="./img/team/me.jpg" alt="Михаил Ермаков" width="270" height="260" />
             <h3 class="ourteam__subject">Михаил Ермаков</h3>
             <p class="ourteam__heading">UI Designer</p>
  <ul class="ourteam__social-list list">

@@ -1,75 +1,73 @@
+/* Секція особливості*/
 /*=============   FEATURES   ==============*/
 /*переводим вертикальний список в горизонтальний */
 
 .features {
-  padding: 60px 0;
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
+  padding-top: 94px;
+  padding-bottom: 79px;
+  background-color: $white-color;
+  margin: 0 auto;
 
   &__list {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    & &-item {
+      width: calc((100% - 90px) / 4);
     }
-  }
-
-  &__item {
-    width: 100%;
-
-    @media screen and (max-width: 767px) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+    /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
+    & &-item + &-item {
+      margin-left: 30px;
     }
 
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 1 * 30px) / 2);
-      &:not(:nth-child(even)) {
-        margin-right: 30px;
-      }
-      &:not(:nth-last-child(-n + 2)) {
-        margin-bottom: 30px;
-      }
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 3 * 30px) / 4);
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+    &-item::before {
+      display: block;
+      content: "";
+      height: 120px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
   &__title {
-    margin-top: 0;
-    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.17;
-    text-align: center;
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
-      font-size: 36px;
-    }
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: $main-text-color;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   &__text {
-    margin-top: 0;
-    margin-bottom: 0;
-
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 2;
+    color: $secondary-text-color;
+    letter-spacing: 0.03em;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
-.svg-container {
-  display: flex;
-  height: 120px;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-  background-color: $background-grey-color;
+.item-antenna::before {
+  background-image: url(../img/features/antenna.svg);
+  background-size: 70px;
+}
+
+.item-clock::before {
+  background-image: url(../img/features/clock.svg);
+  background-size: 70px;
+}
+
+.item-diagram::before {
+  background-image: url(../img/features/diagram.svg);
+  background-size: 70px;
+}
+
+.item-astronaut::before {
+  background-image: url(../img/features/astronaut.svg);
+  background-size: 70px;
 }
