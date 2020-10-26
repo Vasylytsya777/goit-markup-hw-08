@@ -1,85 +1,112 @@
 /*=============   OUR TEAM   ==============*/
 /* наша команда*/
 .ourteam {
-  background-color: $background-grey-color;
-  margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &__list {
-    display: flex;
+    @extend %list;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      display: wrap;
+    }
 
     /*задаєм правий марджин для картинок, крім першої (бо перша вже не міє сестринської Item)*/
-    & .ourteam__item {
-      width: calc((100% - 3 * 30px) / 3);
-      margin-right: 30px;
-    }
+    // & .ourteam__item {
+    //   width: calc((100% - 3 * 30px) / 3);
+    //   margin-right: 30px;
+    // }
   }
   &__item {
-    width: 270px;
+    padding-bottom: 24px;
+    width: 100%;
     background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
-  }
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
 
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    color: $main-text-color;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 1 * 30px) / 2);
+      &:not(:nth-child(even)) {
+        margin-right: 30px;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
+      padding-bottom: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 
   &__image {
     margin-bottom: 30px;
   }
 
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+  }
+
   &__subject {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.188;
-    color: $main-text-color;
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
+    line-height: 1.19;
     text-align: center;
   }
 
   &__heading {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: $secondary-text-color;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.188;
-    color: $secondary-text-color;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    line-height: 1.19;
     text-align: center;
-    margin-bottom: 16px;
   }
 
   &__social-list {
-    display: flex;
-    width: 206px;
-    margin: 0 auto;
-
+    @extend %list;
     display: flex;
     justify-content: center;
   }
-
-  &__social-item:not(:last-child) {
-    margin-right: 10px;
+  &_social-item {
+    color: #afb1b8;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
   &__social-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
     height: 44px;
-    background-color: $white-color;
+    width: 44px;
     border-radius: 50%;
+    color: #afb1b8;
 
     &:hover,
     &:focus {
@@ -97,6 +124,6 @@
   &__social-svg {
     width: 20px;
     height: 20px;
-    fill: #afb1b8;
+    fill: currentColor;
   }
 }

@@ -1,9 +1,10 @@
 /*=============   regular-clients   ==============*/
 
 .clients {
-  margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &__title {
     font-weight: 700;
