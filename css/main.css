@@ -48,6 +48,28 @@ img {
   pointer-events: none;
 }
 
+.contact-form-btn {
+  /* font-family: inherit; */
+  display: block;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -261,15 +283,13 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/img/herobg/img-m@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-m@2x.jpg");
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-t.jpg");
-    background-size: cover;
-    background-position: center;
   }
 }
 
@@ -279,15 +299,9 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/herobg/img-d.jpg");
-    background-size: cover;
-    background-position: center;
   }
 }
 
@@ -297,41 +311,23 @@ img {
   }
 }
 
-.hero__content {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .hero__content {
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__content {
-    width: 696px;
-  }
-}
-
 .hero__title {
+  max-width: 360px;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (mіn-width: 1200px) {
   .hero__title {
-    font-size: 26px;
-    line-height: 1.61;
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -360,28 +356,6 @@ img {
   color: #2196f3;
 }
 
-.contact-form-btn {
-  /* font-family: inherit; */
-  display: block;
-  justify-content: center;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  text-align: center;
-  text-decoration: none;
-  margin-bottom: 40px;
-  margin: 0 auto;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Секція особливості*/
 /*=============   FEATURES   ==============*/
 /*переводим вертикальний список в горизонтальний */
@@ -400,39 +374,6 @@ img {
   }
 }
 
-.features__list {
-  outline: 1px solid red;
-  /*задаєм правий марджин для тексту, крім першого (бо перша вже не міє сестринської Item)*/
-}
-
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__list {
-    display: flex;
-  }
-}
-
-.features__list .features__list-item + .features__list-item {
-  margin-top: 30px;
-}
-
-.features-item {
-  outline: 1px solid red;
-}
-
-@media screen and (min-width: 1200px) {
-  .features-item {
-    outline: 1px solid red;
-    width: calc((100% - 90px) / 4);
-  }
-}
-
 .features__svg {
   margin: 0 auto;
   background-color: #f5f4fa;
@@ -447,17 +388,6 @@ img {
     height: 120px;
     padding: 25px 142px;
   }
-}
-
-.features-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .features__title {
