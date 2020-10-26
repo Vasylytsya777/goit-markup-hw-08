@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -368,29 +374,48 @@ img {
   outline: 1px solid red;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .features {
-    width: 738px;
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
-.features__svg {
-  margin: 0 auto;
-  background-color: #f5f4fa;
-  height: 120px;
-  border-radius: 4px;
-  padding: 25px 190px;
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .features__svg {
+@media screen and (min-width: 1200px) {
+  .features__item:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item:not(:last-child)__item {
     width: 354px;
-    height: 120px;
-    padding: 25px 142px;
   }
 }
 
-.features__title {
+@media screen and (min-width: 1200px) {
+  .features__item:not(:last-child)__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item:not(:last-child)__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__item:not(:last-child)__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.features__item:not(:last-child)__title {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -402,13 +427,35 @@ img {
   margin-bottom: 10px;
 }
 
-.features__text {
+@media screen and (min-width: 768px) {
+  .features__item:not(:last-child)__title {
+    text-align: start;
+  }
+}
+
+.features__item:not(:last-child)__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
   color: #757575;
   letter-spacing: 0.03em;
   height: 50px;
+}
+
+.container-svg {
+  margin: 0 auto;
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  padding: 25px 190px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .container-svg {
+    width: 354px;
+    height: 120px;
+    padding: 25px 142px;
+  }
 }
 
 /*=============   OUR WORK   ==============*/

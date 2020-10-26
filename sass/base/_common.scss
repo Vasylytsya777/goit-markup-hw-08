@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 0;
+}
+
 .list {
   list-style: none;
 }
