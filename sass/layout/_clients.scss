@@ -30,8 +30,6 @@
     align-items: center;
   }
 
-  /* !!!  вище треба прописати мінусовий -15 margin  !!!*/
-
   &__item {
     width: calc((100% - 5 * 30px) / 6);
     margin-right: 30px;
