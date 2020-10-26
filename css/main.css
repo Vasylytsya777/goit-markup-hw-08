@@ -443,19 +443,19 @@ img {
 }
 
 .container-svg {
-  margin: 0 auto;
-  background-color: #f5f4fa;
   height: 120px;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 190px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .container-svg {
-    width: 354px;
-    height: 120px;
-    padding: 25px 142px;
-  }
+.container-svg__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
 }
 
 /*=============   OUR WORK   ==============*/
