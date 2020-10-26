@@ -8,7 +8,7 @@
   background-color: $white-color;
   margin: 0 auto;
 
-  &__list {
+  &__list {q
     display: flex;
     & &-item {
       width: calc((100% - 90px) / 4);

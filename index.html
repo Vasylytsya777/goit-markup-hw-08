@@ -15,16 +15,25 @@
   </head>
   <body>
   
+
+
     <!-- Head site -->
     <header class="header">
       <div class="container">  
         <div class="header__container">
-            <a class="header__logo" href="./index.html"
-          ><span lang="en" class="header__name" >Web</span>Studio</a
-        > 
-          <nav class="navigaion">
+            <a class="studio-logo" href="./index.html" aria-label=""
+          ><span lang="en" class="studio-logo__item">Web</span>Studio</a> 
+   
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <svg class="mobile-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./img/svg/sprite.svg#vector"></use>
+        <use class="icon-cross" href="./img/svg/sprite.svg#imenu"> </use>
+      </svg>
+    </button>
+  <div class="menu-container" id="menu-container" data-menu>
+      <nav class="navigaion">
         <!-- List of links  -->
-        <ul class="navigaion__list list">
+        <ul class="navigaion__list">
           <li class="navigaion__item"><a href="./index.html" aria-label="головна сторінка" class="navigaion__link navigaion__link-curent">Студия</a></li>
           <li class="navigaion__item">
             <a href="./portfolio.html" aria-label="Портфолио" class="navigaion__link">Портфолио</a>
@@ -34,55 +43,73 @@
       </nav>
      
         <!-- link email and mobile telephone  -->
-        <ul class="authorization list">
-          <li class="authorization__item">
-            <a class="authorization__item-mail" href="mailto:info@devstudio.com" >
-              <svg class="authorization__icon" width="16px" height="12">
-                <use href="./img/svg/sprite.svg#envelope"></use>
+        <ul class="authorization-list">
+          <li class="authorization-list__item">
+            <a class="authorization-list__link" href="mailto:info@devstudio.com" >
+              <svg class="authorization-list__icon" width="16px" height="12">
+                <use class="contacts-logo__mail" href="./img/svg/sprite.svg#envelope"></use>
               </svg> info@devstudio.com
             </a>
           </li>
-          <li class="authorization__item">
-            <a class="authorization__item-tel" href="tel:+380961111111" >
+          <li class="authorization-list__item">
+            <a class="authorization-list__link" href="tel:+380961111111" >
                   <svg class="authorization__icon" width="10" height="16">
-                    <use href="./img/svg/sprite.svg#smartphone"></use>
+                    <use class="contacts-logo__tel" href="./img/svg/sprite.svg#smartphone"></use>
                   </svg>
               +38 096 111 11 11</a>
           </li>
         </ul>
+
+
+  </div>
+    
       </div>
             </div>
       </header>
 
-    <main class="main">
-     
+
+
+
+    <main>
      
       <!-- секція hero -->
-     
-     
-      <section class="hero">
-            <h1 class="hero__title">
-          Эффективные решения
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-
-        </section>
+                     <section class="hero">
+                  <div class="container">
+                        <h1 class="hero__title">
+                    Эффективные решения
+                    для вашего бизнеса
+                  </h1>
+                  <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                  </div>
+                        </section>
 
 
       <!-- секція  features -->
-     
-     
-      <section class="features">
+           <section class="features">
         <div class="container"> 
-          <ul class="features__list list">
-          <li class="features__list-item item item-antenna">
+          <ul class="features__list">
+            <h2 class="section-title visually-hidden">Особенности</h2>
+          <li class="features__item">
+            <div class="svg-container">
+<svg class="svg-container__icon">
+  <use href="./img/svg/sprite.svg#icon-antenna"></use>
+</svg>
+            </div>
             <h2 class="features__title">Внимание к деталям</h2>
             <p class="features__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
+
+
+      <div class="svg-container">
+        <svg class="svg-container__icon">
+          <use href="./img/svg/sprite.svg#icon-clock"></use>
+        </svg>
+      
+      </div>
+
           <li class="features__list-item item item-clock">
             <h2 class="features__title">Пунктуальность</h2>
             <p class="features__text">
@@ -90,6 +117,14 @@
               влечет за собой.
             </p>
           </li>
+
+        <div class="svg-container">
+          <svg class="svg-container__icon">
+            <use href="./img/svg/sprite.svg#icon-diagram"></use>
+          </svg>
+        
+        </div>
+
            <li class="features__list-item item  item-diagram">
             <h2 class="features__title">Планирование</h2>
             <p class="features__text">
@@ -97,6 +132,11 @@
               степени обуславливает.
             </p>
           </li>
+    <div class="svg-container">
+      <svg class="svg-container__icon">
+        <use href="./img/svg/sprite.svg#icon-astronaut"></use>
+      </svg>
+        </div>
           <li class="features__list-item item  item-astronaut">
             <h2 class="features__title">Современные технологии</h2>
             <p class="features__text">
@@ -109,6 +149,8 @@
     </section>
 
 
+
+
       <!-- секція  What are we doing -->
 
 
@@ -116,16 +158,17 @@
     <section class="ourwork">
       <div class="container">
           <!--  перейменувати клас бо зверху такий самий! -->
-        <h2 class="ourwork__title">Чем мы занимаемся</h2>
-      <ul class="ourwork__list list">
+        <h2 class="section__title">Чем мы занимаемся</h2>
+      <ul class="ourwork__list">
         <li class="ourwork__item">
+
 
    <img src="./img/ourwork/box_img.jpg"
               alt="What are we doing"
               width="370" height="294"/>
 
 
-              
+
           <div class="ourwork__overlay">
           <p class="ourwork__overlay-label">Мобильные приложения</p>
          </div> 
@@ -156,8 +199,8 @@
 
       <section class="ourteam">
         <div class="container">
-          <h2 class="ourteam__title">Наша команда</h2>
-        <ul class="ourteam__list list">
+          <h2 class="section-title">Наша команда</h2>
+        <ul class="ourteam__list">
           <li class="ourteam__item">
             <img class="ourteam__image" src="./img/team/id.jpg" alt="Игорь Демьяненко" width="270" height="260" />
             <h3 class="ourteam__subject">Игорь Демьяненко</h3>
@@ -361,17 +404,15 @@
   </section>
 
 
-
-
     <!--  секція footer  -->
-
 
     <footer class="footer">
       <div class="footer__container container">
         
         <div class="footer-contacts">
-       <a class="footer-contacts__logo" href="./index.html"
-        ><span class="footer-contacts__name">Web</span>Studio</a>
+       <a class="studio-logo" href="./index.html"
+        ><span class="studio-logo__item">Web</span> 
+        <span class="studio-logo__item--black">Studio</span> </a>
 
 <address class="footer__adress">
         <ul class="footer__adress-list list">
