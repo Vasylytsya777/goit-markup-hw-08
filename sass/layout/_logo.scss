@@ -1,17 +1,17 @@
 .studio-logo {
   text-decoration: none;
-  font-family: $logo-font;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
 
-  color: $title-text-color;
+  color: #212121;
 
   &__item {
-    color: $accent-color;
+    color: #2196f3;
 
     &--black {
-      color: $primary-white-color;
+      color: #ffffff;
     }
   }
 
