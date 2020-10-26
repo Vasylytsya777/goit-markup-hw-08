@@ -26,25 +26,25 @@
    
           <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
       <svg class="mobile-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
-        <use class="icon-menu" href="./img/svg/sprite.svg#vector"></use>
-        <use class="icon-cross" href="./img/svg/sprite.svg#menu"> </use>
+        <use class="icon-menu" href="./img/svg/sprite.svg#menu"></use>
+        <use class="icon-cross" href="./img/svg/sprite.svg#close"> </use>
       </svg>
     </button>
   <div class="menu-container" id="menu-container" data-menu>
     
-    <nav class="navigaion">
+    <nav class="navigation">
         <!-- List of links  -->
-        <ul class="navigaion__list">
+        <ul class="navigation__list">
          
-          <li class="navigaion__list-item navigation__list-item--curent">
-            <a href="./index.html" aria-label="головна сторінка" class="navigaion__list-link navigaion__list-link--curent">Студия</a></li>
+          <li class="navigation__list-item navigation__list-item--curent">
+            <a href="./index.html" aria-label="головна сторінка" class="navigation__list-link navigation__list-link--curent">Студия</a></li>
          
             <li class="navigaion__list-item">
-            <a href="./portfolio.html" aria-label="Портфолио" class="navigaion__list-link">Портфолио</a>
+            <a href="./portfolio.html" aria-label="Портфолио" class="navigation__list-link">Портфолио</a>
           </li >
         
-          <li class="navigaion__list-item">
-            <a href="" aria-label="Контакти" class="navigaion__list-link">Контакти</a></li>
+          <li class="navigation__list-item">
+            <a href="" aria-label="Контакти" class="navigation__list-link">Контакти</a></li>
         </ul>
       </nav>
      
@@ -81,20 +81,21 @@
                     Эффективные решения
                     для вашего бизнеса
                   </h1>
-                  <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                  <button type="button" class="button" data-modal-open>Заказать услугу</button>
                   </div>
                         </section>
 
 
       <!-- секція  features -->
            <section class="features">
-        <div class="container"> 
-          <ul class="features__list">
+        <div class="container">  
             <h2 class="section-title visually-hidden">Особенности</h2>
+          <ul class="features__list">
+         
           <li class="features__item">
             <div class="svg-container">
 <svg class="svg-container__icon">
-  <use href="./img/svg/sprite.svg#icon-antenna"></use>
+  <use href="./img/svg/sprite.svg#antenna"></use>
 </svg>
             </div>
             <h2 class="features__title">Внимание к деталям</h2>
@@ -103,52 +104,45 @@
               формированию позиции.
             </p>
           </li>
-
-
-      <div class="svg-container">
-        <svg class="svg-container__icon">
-          <use href="./img/svg/sprite.svg#icon-clock"></use>
-        </svg>
-      
-      </div>
-
-          <li class="features__list-item item item-clock">
-            <h2 class="features__title">Пунктуальность</h2>
-            <p class="features__text">
+            <li class="features__item">
+              <div class="svg-container">
+                <svg class="svg-container__icon">
+                  <use href="./img/svg/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <h2 class="features__title">Пунктуальность</h2>
+              <p class="features__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
-            </p>
-          </li>
-
-        <div class="svg-container">
-          <svg class="svg-container__icon">
-            <use href="./img/svg/sprite.svg#icon-diagram"></use>
-          </svg>
-        
-        </div>
-
-           <li class="features__list-item item  item-diagram">
-            <h2 class="features__title">Планирование</h2>
-            <p class="features__text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-    <div class="svg-container">
-      <svg class="svg-container__icon">
-        <use href="./img/svg/sprite.svg#icon-astronaut"></use>
-      </svg>
-        </div>
-          <li class="features__list-item item  item-astronaut">
-            <h2 class="features__title">Современные технологии</h2>
-            <p class="features__text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+              </p>
+            </li>
+              <li class="features__item">
+                <div class="svg-container">
+                  <svg class="svg-container__icon">
+                    <use href="./img/svg/sprite.svg#diagram"></use>
+                  </svg>
+                </div>
+                <h2 class="features__title">Планирование</h2>
+                <p class="features__text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+                  <li class="features__item">
+                    <div class="svg-container">
+                      <svg class="svg-container__icon">
+                        <use href="./img/svg/sprite.svg#astronaut"></use>
+                      </svg>
+                    </div>
+                    <h2 class="features__title">Современные технологии</h2>
+                    <p class="features__text">
+                    Значимость этих проблем настолько очевидна, что реализация
+                    плановых заданий.
+                    </p>
+                  </li>
+                     </ul>
+                </div>
+              </section>
 
 
 
@@ -162,53 +156,29 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="ourwork__list">
         <li class="ourwork__item">
-
-
-
              <a href="" class="ourwork__link">
-            <img class="ourwork__link-img"  srcset="./img/ourwork/img-m.jpg 1x, ./img/ourwork/img-m@2x.jpg 2x"
-             src="./img/ourwork/img-m.jpg" alt="What are we doing" width="370" height="294">
+              <img class="ourwork__link-img" srcset="./img/ourwork/img-d.jpg 1x, ./img/ourwork/img-d@2x.jpg 2x"
+                src="./img/ourwork/img-d.jpg" alt="What are we doing" width="370" height="294">
               <p class="ourwork__overlay-label">Мобильные приложения</p>
-        </a>
-
-
-          </li>
-
-        <li class="ourwork__item">
-
-
-<a href="" class="ourwork__link">
-
-  <img class="ourwork__link-img" srcset="./img/ourwork/img-t.jpg 1x, ./img/ourwork/img-t@2x.jpg 2x"
-    src="./img/ourwork/img-t.jpg" alt="What are we doing" width="370" height="294">
-  <p class="ourwork__overlay-label">Десктопные приложения</p>
-</a>
-
-
-
-      </li>
-
-        <li class="ourwork__item">
-
-
-
-          <img src="./img/ourwork/box_img(2).jpg"
-              alt="What are we doing 2"
-              width="370" height="294"/>
-
-
-
-
-              <a href="" class="ourwork__link">
-              
-                <img class="ourwork__link-img" srcset="./img/ourwork/img-d.jpg 1x, ./img/ourwork/img-d@2x.jpg 2x"
-                  src="./img/ourwork/img-d.jpg" alt="What are we doing" width="370" height="294">
-  <p class="ourwork__overlay-label">Дизайнерские решения</p>
+            </a>
+              </li>
+            <li class="ourwork__item">
+            <a href="" class="ourwork__link">
+                <img class="ourwork__link-img" srcset="./img/ourwork/img-d-1.jpg 1x, ./img/ourwork/img-d-1@2x.jpg 2x"
+                  src="./img/ourwork/img-d-1.jpg" alt="What are we doing" width="370" height="294">
+              <p class="ourwork__overlay-label">Десктопные приложения</p>
+            </a>
+            </li>
+            <li class="ourwork__item">
+            <a href="" class="ourwork__link">
+                <img class="ourwork__link-img" srcset="./img/ourwork/img-d-2.jpg 1x, ./img/ourwork/img-d-2@2x.jpg 2x"
+                  src="./img/ourwork/img-d-2.jpg" alt="What are we doing" width="370" height="294">
+                <p class="ourwork__overlay-label">Дизайнерские решения</p>
               </a>
-      </li>
-      </ul>
-    </div>
-      </section>
+              </li>
+              </ul>
+              </div>
+              </section>
 
 
       <!-- секція Our team    доробити розкладку !!!! -->

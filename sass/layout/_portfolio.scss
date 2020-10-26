@@ -1,40 +1,167 @@
-/*=====================    Портфоліо    =====================*/
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.filter-btn {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
-  /*задаєм правий марджин для кнопок, крім першої (бо перша вже не міє сестринської Item)*/
-  & &__item + &__item {
-    margin-left: 8px;
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list-card-link {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__list-card {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 30px) / 2);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      margin-bottom: 30px;
+      /* width: 370px; */
+      width: calc((100% - 60px) / 3);
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__list-card-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 4vw;
+    line-height: 1.56;
+    background: rgba(33, 150, 243, 0.9);
+    color: #ffffff;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      padding: 77px 24px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
+  }
+
+  &__list-card:hover &__list-card-label {
+    transform: translateY(0);
+  }
+
+  &__list-card-link:focus &__list-card-label {
+    transform: translateY(0);
+  }
+
+  &__list-card-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__list-card-content {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  &__list-card-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__list-card-text {
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
   }
 }
-.button-menu {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  color: $main-text-color;
-  border: none;
-  background-color: $background-grey-color;
-  border-radius: 4px;
-  padding: 6px 22px;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: $white-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
+// /*=====================    Портфоліо    =====================*/
+// .portfolio {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+// }
+
+// .filter-btn {
+//   display: flex;
+//   align-content: center;
+//   justify-content: center;
+//   padding-bottom: 50px;
+
+//   /*задаєм правий марджин для кнопок, крім першої (бо перша вже не міє сестринської Item)*/
+//   & &__item + &__item {
+//     margin-left: 8px;
+//   }
+// }
+// .button-menu {
+//   display: inline-block;
+//   font-family: "Roboto", sans-serif;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.625;
+//   text-align: center;
+//   color: #212121;
+//   border: none;
+//   background-color: #f5f4fa;
+//   border-radius: 4px;
+//   padding: 6px 22px;
+
+//   &:hover,
+//   &:focus {
+//     background-color: #2196f3;
+//     color: #ffffff;
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
