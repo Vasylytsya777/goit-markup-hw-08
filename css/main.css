@@ -1231,7 +1231,7 @@ h6 {
   }
 }
 
-.close-modal {
+.close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1243,8 +1243,8 @@ h6 {
   cursor: pointer;
 }
 
-.close-modal:hover .close-icon,
-.close-modal:focus .close-icon {
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
   fill: #2196f3;
 }
 
@@ -1365,7 +1365,7 @@ h6 {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  background-image: url("./img/svg/sprite.svg#vector");
+  background-image: url("../img/uncheck.svg");
   background-color: #ffffff;
 }
 
@@ -1381,7 +1381,7 @@ h6 {
 }
 
 .form__checkbox:checked + .form__agreement::before {
-  background-image: url("./img/check.svg");
+  background-image: url("../img/check.svg");
   background-color: #2196f3;
   border-radius: 2px;
 }

@@ -34,7 +34,7 @@
   }
 }
 
-.close-modal {
+.close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -161,7 +161,7 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 5px;
-      background-image: url("./img/svg/sprite.svg#vector");
+      background-image: url("../img/uncheck.svg");
       background-color: #ffffff;
     }
   }
@@ -177,7 +177,7 @@
     overflow: hidden;
 
     &:checked + .form__agreement::before {
-      background-image: url("./img/check.svg");
+      background-image: url("../img/check.svg");
       background-color: #2196f3;
       border-radius: 2px;
     }
