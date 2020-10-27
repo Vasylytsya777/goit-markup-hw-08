@@ -9,7 +9,7 @@
     display: flex;
   }
 
-  &__item:not(:last-child) {
+  &__list-item:not(:last-child) {
     margin-right: 30px;
   }
 

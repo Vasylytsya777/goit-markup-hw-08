@@ -599,7 +599,7 @@ h6 {
   display: flex;
 }
 
-.ourwork__item:not(:last-child) {
+.ourwork__list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -733,7 +733,7 @@ h6 {
 }
 
 .socials__link:focus,
-.socials__link:hover .social-logo {
+.socials__link:hover .social-svg {
   fill: #ffffff;
 }
 
@@ -830,7 +830,7 @@ h6 {
   fill: #2196f3;
 }
 
-.clients__logo {
+.clients__svg {
   align-self: center;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
