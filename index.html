@@ -21,11 +21,11 @@
     <header class="header">
       <div class="container">  
         <div class="header__container">
-            <a class="studio-logo" href="./index.html" aria-label=""
+            <a class="studio-logo" href="./index.html" aria-label="Лого"
           ><span lang="en" class="studio-logo__item">Web</span>Studio</a> 
    
           <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-      <svg class="mobile-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+      <svg class="mobile-menu" width="20" height="20" aria-label="Переключатель мобильного меню">
         <use class="icon-menu" href="./img/svg/sprite.svg#menu"></use>
         <use class="icon-cross" href="./img/svg/sprite.svg#close"> </use>
       </svg>
@@ -528,7 +528,7 @@
   </footer>
               
                   <!-- Модальне вікно -->
-                  <div  class="backdrop backdrop--hidden" data-modal>
+                  <div  class="backdrop is-hidden" data-modal>
                     <div class="modal">
                       <form action="#" class="form">
                         <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
@@ -564,19 +564,24 @@
                         <textarea class="form__comment" name="user-message" placeholder="Введите текст"></textarea>
                       </div>
         <!--Льоша брав в секцію -->
+
                         <div class="form__text"> 
-                            <input type="form__checkbox" class="modal__license-contact visually-hidden" name="license-contact" value="agreed-license"
-                             id="license">
-                           <label for="form__agreement" class="modal__label-check">
-                             <span class="form__policy">Соглашаюсь с рассылкой и принимаю</span>
-                            <a class="form__link" href="#" > Условия договора</a> 
+                            <input class="form__checkbox" type="checkbox" name="agreement" value="agreed-license"
+                             id="agreement">
+                                                
+                             <label class="form__agreement" for="agreement">
+                            
+                              <span class="form__policy">Соглашаюсь с рассылкой и принимаю</span>
+                            <a class="form__link" href="#"> Условия договора</a> 
                           </label>
                         </div>
-                        <button type="button" class="contact-form-btn">Отправить</button>
+                     
+                        <!-- <button type="button" class="contact-form-btn">Отправить</button> -->
+                    <button type="button" class="button form__button">Отправить</button>
                       </form>
                          <button class="close-modal" type="button" data-modal-close>
-                        <svg class="close-black">
-                          <use href="./img/svg/sprite.svg#close-black"></use>
+                        <svg class="close-icon">
+                          <use href="./img/svg/sprite.svg#close"></use>
                         </svg>
                       </button>
                     </div>
