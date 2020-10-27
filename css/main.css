@@ -105,10 +105,29 @@ h6 {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -843,7 +862,7 @@ h6 {
   padding-bottom: 60px;
 }
 
-.footer____studio-logo {
+.footer__studio-logo {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -880,6 +899,7 @@ h6 {
   }
 }
 
+/*2 секція*/
 @media screen and (max-width: 767px) {
   .footer-join {
     margin-bottom: 60px;
