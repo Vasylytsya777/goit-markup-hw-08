@@ -1365,7 +1365,7 @@ h6 {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  background-image: url("/img/uncheck.svg");
+  background-image: url("./img/svg/sprite.svg#vector");
   background-color: #ffffff;
 }
 
@@ -1381,7 +1381,7 @@ h6 {
 }
 
 .form__checkbox:checked + .form__agreement::before {
-  background-image: url("/img/check.svg");
+  background-image: url("./img/check.svg");
   background-color: #2196f3;
   border-radius: 2px;
 }
